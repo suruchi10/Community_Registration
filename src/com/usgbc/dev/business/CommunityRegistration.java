@@ -19,6 +19,8 @@ public class CommunityRegistration extends CommunityRegistration_{
 	public CommunityRegistration(WebDriver driver) {
 		super(driver);		
 	}
+	
+	//for country india (105)
 	public void formFillUp() throws InterruptedException {
 		
 		//for selecting community name
@@ -128,11 +130,7 @@ public class CommunityRegistration extends CommunityRegistration_{
 		   String CurrentURL=driver.getCurrentUrl();
 		   System.out.println(" Checking Broken Link of Current Url:" +CurrentURL);
 		   BrokenLink bl =new BrokenLink();
-			BrokenLink.BrokenLinkCheck(CurrentURL);
-
-		   
-		   
-		   
+			BrokenLink.BrokenLinkCheck(CurrentURL);   
 		   
 	   }
 	   
